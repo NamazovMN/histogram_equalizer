@@ -5,5 +5,5 @@ Thiss allows us to increase the global contrast of the image while pixels with t
 ## How do we apply?
 Histogram equalization cannot be applied to the RGB image, since it can make strong modifications on image channels. So that we transform the image into gray-scale form, initially. At the next step we apply Gaussian filter to image, which reduces noise in the image and blures regions of the image. Following figure depicts the difference after applying Gaussian Filter to the image.
 <p align="center">
-<img src="train_results/examples_dir/eagleHorse.jpg/gaussian.png" width="250" height="220">
+<img src="examples_dir/eagleHorse.jpg/gaussian.png" width="250" height="220">
 </p>
