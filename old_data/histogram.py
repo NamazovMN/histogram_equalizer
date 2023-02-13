@@ -47,7 +47,7 @@ def norm_to_pixel_range(cdf_normalized):
 
 
 # we get resized image by using resize_image function
-eagle_horse, dimension = resize_image("eagleHorse.jpg", 40)
+eagle_horse, dimension = resize_image("../dataset/eagleHorse.jpg", 40)
 eagle_horse_array = np.array(eagle_horse)
 # transform it from rgb to gray scale
 eagle_horse_gray = rgb2gray(eagle_horse_array)
@@ -106,7 +106,7 @@ plt.show()
 
 normalized_cdf_to_pixel = norm_to_pixel_range(cdf)
 eagle_horse_gray_equalized = normalized_cdf_to_pixel[gaussian_result_eh.astype("uint8")]
-eagle_horse_gray_equalized = np.reshape(eagle_horse_gray_equalized,gaussian_result_eh.shape )
+eagle_horse_gray_equalized = np.reshape(eagle_horse_gray_equalized,gaussian_result_eh.shape)
 
 
 hist_eq, images = plt.subplots(1,2)
