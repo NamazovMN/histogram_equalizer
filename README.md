@@ -16,5 +16,6 @@ On the other hand, the following figure expresses the difference between origina
 <img src="examples_dir/eagleHorse.jpg/histograms.png" >
 </p>
 We know that 0 and 255 correspond to black and white in gray-scale, respectively. It's seen that while intensity of black-ish pixels were high before application, this intensity was spread to the other pixels after application.
-## What did we change
+
+## What did we change?
 In [old_data](old_data) you can find the previous version of the source code. The new version of the source code satisfies Python PEP-8 standards and cleaner than before, so that all required information is also provided. Additionally, the previous version was useful for single image, while the new version is applicable for n images in [dataset](dataset) directory. When process will be done for all images in the folder, ([statistics.py](src/statistics.py)) object will choose one image randomly and provide corresponding images above. The folder with the name of the chosen image will be created and results will be saved within.
