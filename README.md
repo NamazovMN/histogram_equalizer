@@ -7,4 +7,7 @@ Histogram equalization cannot be applied to the RGB image, since it can make str
 <p align="center">
 <img src="examples_dir/eagleHorse.jpg/gaussian.png" >
 </p>
-Then we compute Histogram of the image, where x-axis shows pixel information, and y-axis represents intensity values of corresponding pixels. After getting the Histogram of the image, we compute cumulative distribution of the image (CDF) according to the intensity values of the pixels. Resulting CDF array is utilized to normalize  
+Then we compute Histogram of the image, where x-axis shows pixel information, and y-axis represents intensity values of corresponding pixels. After getting the Histogram of the image, we compute cumulative distribution of the image (CDF) according to the intensity values of the pixels. We use maximum CDF value in the CDF array of the image and maximum intensity value of pixels to normalize CDF array of the image. At the next step we utilize maximum and minimum values of normalized CDF in order to equalize the histogram of the image. At the end we also apply Gaussian filter as a low-pass filter to blur regions of the image. Following figure depicts the original gray-scaled image and an image to which histogram equalization was applied.
+<p align="center">
+<img src="examples_dir/eagleHorse.jpg/equalized.png" >
+</p>
