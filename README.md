@@ -11,3 +11,7 @@ Then we compute Histogram of the image, where x-axis shows pixel information, an
 <p align="center">
 <img src="examples_dir/eagleHorse.jpg/equalized.png" >
 </p>
+On the other hand, the following figure expresses the difference between original and equalized histogram data
+<p align="center">
+<img src="examples_dir/eagleHorse.jpg/histograms.png" >
+</p>
